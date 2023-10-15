@@ -111,10 +111,35 @@ p{
     color: #fff;  
 }
 
+.password-container {
+    display: flex;
+    align-items: center;
+}
+
+.password-container input {
+    width: 80%;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    font: 16px 'Gotham' sans-serif;
+    color: aliceblue;
+}
+
+.password-container button {
+    border: none;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 10px; 
+}
+
 /* animation */
 
 .loginBox input[type="submit"]:active {
-    background-color: #0056b3; /* Новый цвет кнопки при наведении */
+    background-color: #0056b3; 
   }
 
 
@@ -144,7 +169,96 @@ p{
 
 /* screen adaptive */
 
+@media (max-width: 600px) {
+    .loginBox {
+        border-radius: 0; 
+    }
 
+    .userImg {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        position: absolute; 
+        top: 0;
+        left: 50%; 
+    }
+
+    .social-container {
+        margin-top: 20px; 
+    }
+
+    .mainInfo {
+        padding: 20px; 
+    }
+
+    .loginBox input[type='text'],
+    .loginBox input[type='password'] {
+        font-size: 10px; 
+    }
+
+    .password-container button {
+        font-size: 10px; 
+    }
+}
+
+@media (max-width: 400px) {
+    .loginBox {
+        border-radius: 0;
+    }
+
+    .userImg {
+        opacity: 0;
+    }
+
+    .social-container {
+        margin-top: 20px;
+    }
+
+    .mainInfo {
+        padding: 20px;
+    }
+
+    .loginBox input[type='text'],
+    .loginBox input[type='password'] {
+        font-size: 10px; 
+    }
+
+    .password-container button {
+        font-size: 10px; 
+    }
+}
+
+@media (max-height: 900px) {
+    .loginBox {
+        border-radius: 0;
+    }
+
+    .userImg {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        position: absolute; 
+        top: 0;
+        left: 50%; 
+    }
+
+    .social-container {
+        margin-top: 20px; 
+    }
+
+    .mainInfo {
+        padding: 20px; 
+    }
+
+    .loginBox input[type='text'],
+    .loginBox input[type='password'] {
+        font-size: 16px; 
+    }
+
+    .password-container button {
+        font-size: 20px; 
+    }
+}
 
 
 /* font connection */
