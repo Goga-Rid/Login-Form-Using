@@ -96,6 +96,8 @@ p{
     height: 60px;
     margin-top: 10px;
     border-radius: 15px;
+    transition: background-color 0.11s; 
+    cursor: pointer;
 }
 
 .mainInfi{
@@ -108,6 +110,43 @@ p{
 .help-links{
     color: #fff;  
 }
+
+/* animation */
+
+.loginBox input[type="submit"]:active {
+    background-color: #0056b3; /* Новый цвет кнопки при наведении */
+  }
+
+
+  .mainInfi p  {
+  font-size: 20px;
+  transition: font-size 0.5s ease;
+}
+
+.social-container a {
+    opacity: 0;
+    position: relative;
+    animation: fadeInTop 1s ease-in-out forwards;
+}
+
+
+
+@keyframes fadeInTop {
+    0% {
+        top: -55px; 
+    }
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
+  
+
+/* screen adaptive */
+
+
+
+
 /* font connection */
 @font-face {
     font-family: 'Gotham'; 
