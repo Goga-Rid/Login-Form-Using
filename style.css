@@ -264,5 +264,5 @@ p{
 /* font connection */
 @font-face {
     font-family: 'Gotham'; 
-    src: url(./fonts/Gotham-Bold.otf); 
+    src: url(/fonts/Gotham-Bold.otf); 
 }
